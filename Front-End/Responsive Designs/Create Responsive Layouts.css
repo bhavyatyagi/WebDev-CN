@@ -1,0 +1,31 @@
+h1{
+    font-size:1.4rem;
+text-decoration: underline;
+    text-align:center;
+}
+div{
+    display: inline-block;
+}
+.div1{
+    background-color: #ff8989;
+    width: 32%;
+    height: 300px;
+}
+.div2{
+    background-color: #88f7ce;
+    width: 32%;
+    height: 300px;
+}
+.div3{
+    background-color: #e29df2;
+    width:32%;
+    height: 300px;
+}
+@media screen and (max-width: 600px){
+    div{
+         display: block;
+    }
+    .div1,.div2,.div3{
+		width:100%;
+	    }
+}
