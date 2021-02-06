@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Click Count</title>
+</head>
+<body>
+	
+    <div id="div1">
+    </div>
+    <span>Box Clicked <span id="times"> &nbsp0</span> times</span>
+</body>
+</html>
+
+
+#div1{
+    width:200px;
+    height:200px;
+    background-color: red;
+}
+
+
+var box=document.getElementById('div1');
+var counter=0;
+function func(){
+    counter=counter+1;
+    console.log(counter);
+    times.innerHTML=counter;
+}
+box.addEventListener('click',func);
