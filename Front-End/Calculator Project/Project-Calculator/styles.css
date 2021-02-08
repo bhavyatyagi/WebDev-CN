@@ -1,0 +1,24 @@
+h1
+{
+  text-align: center;
+}
+.cal-div{
+  width: 60%;
+}
+.cal-display{
+  border: 2px solid black;
+  height: 60px;
+}
+.buttons{
+  display: inline-block;
+  border: 2px solid black;
+  width: 20%;
+  height: 40px;
+  padding: 10px 5px;
+  cursor: pointer;
+}
+.ac-button{
+  margin: -10px 0 0 75%;
+  height: 12px !important;
+  position: absolute;
+}
