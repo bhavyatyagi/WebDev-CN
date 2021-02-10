@@ -1,0 +1,25 @@
+
+div{
+  position: relative;
+  overflow: hidden;
+  margin: 100px;
+  height: 100px;
+  width: 100px;
+}
+p{
+  border-top: 2px solid darkslategrey;
+  line-height: 80px;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  color: white;
+  background-color: black;
+}
+p.next{
+  position: absolute;
+  top: 100px;
+}
+p.animate{
+  top: 0;
+  transition: all 0.5s;
+}
