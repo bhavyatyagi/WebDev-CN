@@ -1,0 +1,75 @@
+/* HTML */
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Move Ball</title>
+    <div id="ball">
+        
+    </div>
+</head>
+<body>
+    
+</body>
+</html>
+
+
+
+/* CSS */
+
+#ball{
+	position: absolute;
+    height: 100px;
+    width: 100px;
+    background-color: darkslategrey;
+    border-radius: 50%;
+    margin: 5px 0;
+}
+
+
+/* JS */
+
+
+var ball = document.getElementById("ball");
+ball.style.top = ball.offsetTop + "px";
+ball.style.left = ball.offsetLeft + "px";
+function setValue(value)
+{
+    return value+"px";
+}
+function keyCode(keyPress)
+{
+    var top = parseInt(ball.style.top);
+    var left = parseInt(ball.style.left);
+    //w/W is pressed
+ 	if(keyPress=="87"||keyPress=="119")  
+        {
+            if(top>=0)
+                ball.style.top=setValue(top-5);
+        }
+    //d/D is pressed
+    if(keyPress=="100"||keyPress=="68")  
+        {
+            if(left+5+100<=window.innerWidth)
+                ball.style.left=setValue(left+5);
+        }
+    // A is pressed
+    else if (keyPress === 97 || keyPress === 65) {
+        if (left > 5) {
+            ball.style.left = setValue(left - 5);
+        }
+    }
+
+    // S is pressed
+    else if (keyPress === 115 || keyPress === 83) {
+        if (top < (window.innerHeight - ballHeight) - 5) {
+            ball.style.top = setValue(top + 5);
+        }
+    }
+}
+
+window.addEventListener("keypress",function(event){
+    keyCode(event.keyCode);
+});
+
