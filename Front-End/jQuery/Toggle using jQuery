@@ -1,0 +1,39 @@
+/* HTML */
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Toggle View</title>
+</head>
+<body>
+    <h1>
+        Toggle Using JQuery
+    </h1>
+</body>
+</html>
+
+
+
+/* CSS */
+h1{
+    text-align: center;
+    margin-top: 40%;
+    cursor: pointer;
+}
+
+.toggling
+{
+    color: white;
+}
+body{
+  background-color: white;
+}
+.bg{
+    background-color: black !important;
+}
+
+
+/* script */
+$("h1").click(function(){
+   $(this).toggleClass("toggling");
+    $("body").toggleClass("bg");
+});
