@@ -1,0 +1,28 @@
+#progressBar{
+    
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    height:10px;
+/*     border: 2px solid lightslategrey; */
+    box-shadow: 0 0 10px .1px lightslategrey;
+}
+#filler{
+    height:10px;
+    background-color: darkslategrey;
+    width: 0%;
+    transition: all 0.3s;
+}
+#percentage{
+    top:25px;
+    position: fixed;
+    border: 2px solid lightslategrey;
+    border-radius: 5%;
+    padding: 5px;
+    right : 5px;
+	box-shadow: 0 0 10px .1px lightslategrey;
+}
+#percentage span{
+    color: darkslategrey;
+}
