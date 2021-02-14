@@ -1,0 +1,38 @@
+form{
+    margin-left:10%;
+}
+label{
+    display: block;
+}
+input{
+    margin-bottom: 20px;
+    display: inline-block;
+    padding: 5px;
+	box-shadow: 2px 3px 5px 1px grey;
+}
+button{
+    margin: 15px 0 0 40px;
+    padding: 5px;
+    display: block;
+    box-shadow: 0 0 5px 1px grey;
+}
+main{
+    width: 60%;
+    float: left;
+    position: fixed;
+}
+aside{
+    width: 30%;
+    float: right;
+    border-left: 2px solid grey;
+    vertical-align: top;
+}
+.aside-divs{
+    margin-left: 20px;
+    border: 2px solid black;
+    padding: 10px;
+}
+#highlight
+{
+    background-color: lightgreen;
+}
