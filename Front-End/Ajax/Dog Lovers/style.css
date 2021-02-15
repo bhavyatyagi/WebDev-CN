@@ -1,0 +1,19 @@
+*{
+    box-sizing: border-box;
+}
+.main-div{
+    display: flex;
+    justify-content: space-around;
+}
+.div2{
+    margin-top: 30%;
+}
+.div1{
+    background-image: linear-gradient(to top right, lightblue,lightyellow);
+    height: 70px;
+    padding-top: 25px;
+}
+img{
+    width:180px;
+    height: 120px;
+}
