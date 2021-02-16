@@ -1,0 +1,15 @@
+#main-div{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 25px;
+    height: 50px;
+    background-color: aliceblue;
+}
+#image-div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#image-div img{
+    margin-top: 10px;
+}
