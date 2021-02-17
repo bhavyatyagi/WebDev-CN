@@ -1,0 +1,31 @@
+#main-div{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 25px;
+    height: 50px;
+    background-image: linear-gradient(to bottom right, aliceblue, lightyellow);
+}
+#image-div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#image-div img{
+    margin-top: 10px;
+}
+#buttons{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2%;
+    background-color: lightgrey;
+    padding: 20px 0;
+
+}
+#buttons button{
+    border: 0;
+    padding : 3px 5px;    
+    transition: all 0.5s;
+}
+#buttons button:hover{
+    box-shadow: 1px 3px 20px 0.2px;
+}
