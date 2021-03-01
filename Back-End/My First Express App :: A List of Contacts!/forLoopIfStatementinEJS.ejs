@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>
+            <%= title %>
+        </title>
+        <style>
+            h1
+            {
+                color: aquamarine;
+            }
+            ul,li{
+                transition: all 0.5s;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>& I am Iron Man!</h1>
+
+        <ul>
+            <%for(i=0;i<6;i++){%>
+                <li>
+                    <%= i %>
+                </li>
+                <%}%>
+        </ul>
+
+        <%if(false){%>
+            <h1>This is true block</h1>
+        <%}%>
+        
+    </body>
+</html>
